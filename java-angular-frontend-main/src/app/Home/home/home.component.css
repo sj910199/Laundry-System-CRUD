@@ -1,0 +1,23 @@
+
+
+
+.container{
+    margin-top: 40px;
+    background-color: powderblue;
+}
+
+
+.subtitle{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size:x-small;
+}
+
+.hero-body{
+   padding-top: 56px;
+
+}
+
+.content{
+    padding-right: 56px;
+}

@@ -1,0 +1,48 @@
+
+
+.navbar-item, .navbar-end, .navbar-brand, .navbar-start{
+    color: black;
+}
+
+.navbar-brand{
+   
+    text-decoration: none !important; 
+    text-shadow: black;
+    font-weight:bolder;
+    font-size: xx-large;
+    
+    
+}
+
+.navbar-menu{
+    
+    text-decoration: none !important; 
+    text-shadow: black;
+    font-weight:lighter;
+    font-size:smaller;
+    
+    
+}
+
+.navbar{
+    text-decoration:wavy !important; 
+     
+    top: 0; 
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    background-color: #A2FF86;
+    border:none;
+  
+     
+      
+      
+
+        
+
+ 
+}
+
+a {
+    text-decoration: none;
+ }

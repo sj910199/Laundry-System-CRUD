@@ -1,0 +1,72 @@
+<section class="hero is-primary is-bold is-fullheight-with-navbar ">
+    <div class="hero-body ">
+      
+
+<div class="container">
+    <h1>Update Order Pick-up</h1>
+    >
+    <a href="#" routerLink="/category/index" class="btn btn-primary">Back</a>
+           
+    <form [formGroup]="form" (ngSubmit)="submit()">
+     
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input
+                formControlName="name"
+                id="name"
+                type="text"
+                [(ngModel)]="category.name"
+                class="form-control">
+            <div *ngIf="f['name'].touched && f['name'].invalid" class="alert alert-danger">
+                <div *ngIf="f['name'].errors && f['name'].errors['required']">Name is required.</div>
+            </div>
+        </div>
+            
+        <div class="form-group">
+            <label for="number">Contact Number </label>
+            <textarea
+                formControlName="number"
+                id="number"
+                type="number"
+                [(ngModel)]="category.number"
+                class="form-control">
+            </textarea>
+            <div *ngIf="f['number'].touched && f['number'].invalid" class="alert alert-danger">
+                <div *ngIf="f['number'].errors && f['number'].errors['required']">number is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="address"> Address</label>
+            <textarea
+                formControlName="address"
+                id="address"
+                type="text"
+                [(ngModel)]="category.address"
+                class="form-control">
+            </textarea>
+            <div *ngIf="f['address'].touched && f['address'].invalid" class="alert alert-danger">
+                <div *ngIf="f['address'].errors && f['address'].errors['required']">address is required.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="status">Status</label>
+            <textarea
+                formControlName="status"
+                id="status"
+                type="text"
+                [(ngModel)]="category.status"
+                class="form-control">
+            </textarea>
+            <div *ngIf="f['status'].touched && f['status'].invalid" class="alert alert-danger">
+                <div *ngIf="f['status'].errors && f['status'].errors['required']">status is required.</div>
+            </div>
+        </div>
+          
+        <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Update</button>
+    </form>
+</div>
+
+</div>
+</section>
